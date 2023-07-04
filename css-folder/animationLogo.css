@@ -1,1 +1,31 @@
+/* The animation code */
+@keyframes Fly {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50vw, -50px);
+  }
+  100% {
+    transform: translate(100vw, 0);
+  }
+}
 
+/* The element to apply the animation to */
+.birdie {
+  width: 81px;
+  margin-top: 15%;
+  padding: 0%;
+  animation-name: Fly;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.birdie:hover {
+  animation-play-state: running;
+}
+
+img {
+  width: 100%;
+}
